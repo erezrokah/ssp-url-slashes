@@ -9,6 +9,7 @@ export default function SomeVar({ someVar })  {
 }
 
 export async function getServerSideProps(context) {
+  console.log('******* CONTEXT IN SSP ******', context)
   return {
     props: {
       someVar: context.params.someVar
